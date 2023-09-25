@@ -4,7 +4,7 @@ import {ScaledSheet} from 'react-native-size-matters';
 import {colors} from '../../../utils/theme';
 import {scale} from 'react-native-size-matters';
 
-export default function ButtonType1({backgroundColor, color, title, width}) {
+export default function ButtonType1({backgroundColor, color, title, width, height, handleClick}) {
   return (
     <TouchableOpacity
       style={[
@@ -13,9 +13,10 @@ export default function ButtonType1({backgroundColor, color, title, width}) {
           backgroundColor: `${
             backgroundColor ? backgroundColor : colors.button
           }`,
-          width: width ? scale(width) : scale(327),
+          width: width ? scale(width) : scale(127),
+          height: width ? scale(height) : scale(37),
         },
-      ]}>
+      ]} onPress={()=> handleClick()}>
       <Text style={[styles.title, {color: `${color ? color : 'white'}`}]}>
         {title ? title : 'Button'}
       </Text>
@@ -25,7 +26,6 @@ export default function ButtonType1({backgroundColor, color, title, width}) {
 
 const styles = ScaledSheet.create({
   button: {
-    height: '45@s',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',

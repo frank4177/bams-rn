@@ -28,7 +28,7 @@ export default function Accordion({data}) {
             <Image source={require('../../assets/icons/arrowDown.png')} />
           </TouchableOpacity>
           {selected === item.id ? (
-            <View>
+            <View style={{lineHeight: 25}}>
               <Text style={styles.desc}>{item.desc}</Text>
             </View>
           ) : null}
@@ -60,7 +60,9 @@ const styles = ScaledSheet.create({
     color: colors.text,
   },
   desc: {
-    fontSize: '13@s',
+    fontSize: '14@s',
     color: colors.text,
+    lineHeight:25,
+    marginBottom:10
   },
 });

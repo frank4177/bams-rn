@@ -4,11 +4,12 @@ import Carousel, {Pagination} from 'react-native-snap-carousel';
 import {menus} from '../../../utils/constants';
 import {ScaledSheet} from 'react-native-size-matters';
 import {colors} from '../../../utils/theme';
+import image from "../../../assets/Images/stew.png"
 
 const SLIDER_WIDTH = Dimensions.get('window').width + 80;
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.7);
 
-export default function ProductCarousel() {
+export default function ProductCarousel({data}) {
   const [index, setIndex] = React.useState(0);
   const isCarousel = React.useRef(null);
   return (
@@ -17,7 +18,7 @@ export default function ProductCarousel() {
         layout="default"
         layoutCardOffset={9}
         ref={isCarousel}
-        data={menus}
+        data={data}
         renderItem={({item, index}) => (
             <ProductImageCard item={item} key={index}/>
           )}
@@ -28,7 +29,7 @@ export default function ProductCarousel() {
         // useScrollView={true}
       />
       <Pagination
-        dotsLength={menus.length}
+        dotsLength={data.length}
         activeDotIndex={index}
         carouselRef={isCarousel}
         dotStyle={{
@@ -52,7 +53,7 @@ export const ProductImageCard = ({item}) => {
   return (
     <View style={styles.card}>
       <Image
-        source={item.image}
+        source={item ? item.img : image}
         style={styles.img}
       />
     </View>

@@ -4,13 +4,12 @@ import efoRiro from "../../assets/Images/efoRiro.png"
 import stew from "../../assets/Images/stew.png"
 
 export const menus = [
-    {id: 1, title: "African Doughnut", image: aD, description: "Rare Eat Puff Puff Mix can be made into a deep-fried dough. They are made from yeast dough, shaped into balls and deep-fried until golden brown. It has a doughnut-like texture but slightly o" },
-    {id: 2, title: "Efo Riro", image: efoRiro, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consecteturdoloremque suscipit repudiandae, tenetur voluptate velit repellendus"},
-    {id: 3, title: "Asaro", image: asaro, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consecteturdoloremque suscipit repudiandae, tenetur voluptate velit repellendus"},
-    {id: 4, title: "Chicken stew", image: stew, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consecteturdoloremque suscipit repudiandae, tenetur voluptate velit repellendus"},
-    {id: 5, title: "Efo Riro", image: efoRiro, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consecteturdoloremque suscipit repudiandae, tenetur voluptate velit repellendus"},
-    {id: 6, title: "Asaro", image: asaro, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consecteturdoloremque suscipit repudiandae, tenetur voluptate velit repellendus"},
-    {id: 7, title: "Asaro", image: asaro, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consecteturdoloremque suscipit repudiandae, tenetur voluptate velit repellendus"},
+    {id: "22wyco", quantity:1, title: "African Doughnut", image: aD, allImages:[{img: aD}, {img: efoRiro}, {img: stew}], price: 46, description: "Rare Eat Puff Puff Mix can be made into a deep-fried dough. They are made from yeast dough, shaped into balls and deep-fried until golden brown. It has a doughnut-like texture but slightly o" },
+    {id: "92wyco", quantity:1, title: "Efo Riro", image: efoRiro, allImages:[{img: efoRiro}, {img: aD}, {img: stew}], price: 56, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero!"},
+    {id: "34wyco", quantity:1, title: "Asaro", image: asaro, allImages:[{img: asaro}, {img: efoRiro}, {img: stew}], price: 26, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero!"},
+    {id: "w287co", quantity:1, title: "Chicken stew", image: stew, allImages:[{img: stew}, {img: efoRiro}, {img: asaro}], price: 86, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero!"},
+    {id: "38wuco", quantity:1, title: "Efo Riro", image: efoRiro, allImages:[{img: efoRiro}, {img: efoRiro}, {img: stew}], price: 30, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero!"},
+    {id: "23tuco", quantity:1, title: "Asaro", image: asaro, allImages:[{img: asaro}, {img: efoRiro}, {img: stew}], price: 46, description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,libero!"},
 ]
 
 export const accordionData = [
