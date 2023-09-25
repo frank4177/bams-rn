@@ -4,7 +4,7 @@ import React from 'react'
 export default function HomeScreen() {
   return (
     <View>
-      <Text style={{fontSize:30}}>Coming Soon</Text>
+      <Text style={{fontSize:3, color:"black"}}>Coming Soon</Text>
     </View>
   )
 }

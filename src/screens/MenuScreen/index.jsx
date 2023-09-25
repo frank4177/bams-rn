@@ -55,6 +55,7 @@ const styles = ScaledSheet.create({
   title: {
     color: colors.heading,
     fontSize: '20@s',
+    color: "black"
   },
   padding:{
     paddingHorizontal: "12@s",

@@ -99,10 +99,12 @@ const styles = ScaledSheet.create({
   total: {
     fontSize: '18@s',
     fontWeight: '600',
+    color:"black"
   },
   empty: {
     fontSize: '20@s',
     fontWeight: '700',
+    color:"black"
   },
   buttonWrap: {
     justifyContent: 'center',
@@ -110,5 +112,6 @@ const styles = ScaledSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     gap: 15,
+    
   },
 });

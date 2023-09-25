@@ -103,6 +103,7 @@ const styles = ScaledSheet.create({
   title: {
     fontSize: '15@s',
     fontWeight: '700',
+    color:"black"
   },
   price: {
     color: colors.red,
